@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional portfolio of Santino Aguirre, Lua developer focused on GMod, MTA, server systems, moderation tools and operational workflows." />
+
+  <meta
+    name="description"
+    content="Professional portfolio of Santino Aguirre, Lua developer focused on GMod, MTA, server systems, moderation tools and community workflows."
+  />
+
   <meta name="author" content="Santino Aguirre" />
 
-  <title>Santino Aguirre | Lua Developer & Community Systems</title>
+  <title>Santino Aguirre | Lua Developer</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
 
@@ -46,11 +51,19 @@
       background-size: 4px 4px;
       opacity: 0.08;
     }
+
+    .project-media iframe,
+    .project-media video,
+    .project-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   </style>
 </head>
 
 <body class="bg-background text-white antialiased">
-  <!-- Global Background -->
+  <!-- Background -->
   <div class="fixed inset-0 -z-10 overflow-hidden bg-background">
     <div class="absolute inset-0 grid-bg"></div>
     <div class="absolute inset-0 noise"></div>
@@ -61,10 +74,11 @@
   <!-- Header -->
   <header class="sticky top-0 z-50 border-b border-white/10 bg-background/80 backdrop-blur-xl">
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-      <a href="#home" class="group flex items-center gap-3">
+      <a href="#home" class="flex items-center gap-3">
         <div class="flex h-10 w-10 items-center justify-center rounded-2xl border border-cyan-400/30 bg-cyan-400/10 text-sm font-bold text-cyan-300 shadow-glow">
           SA
         </div>
+
         <div>
           <p class="text-sm font-semibold leading-none">Santino Aguirre</p>
           <p class="mt-1 text-xs text-slate-500">Lua Developer</p>
@@ -78,7 +92,10 @@
         <a href="#contact" class="transition hover:text-cyan-300">Contact</a>
       </div>
 
-      <a href="#contact" class="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-5 py-2 text-sm font-medium text-cyan-300 transition hover:bg-cyan-400/20">
+      <a
+        href="#contact"
+        class="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-5 py-2 text-sm font-medium text-cyan-300 transition hover:bg-cyan-400/20"
+      >
         Get in touch
       </a>
     </nav>
@@ -91,25 +108,37 @@
         <div>
           <div class="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">
             <span class="h-2 w-2 rounded-full bg-cyan-300"></span>
-            Lua systems · GMod · MTA · Community operations
+            Lua Developer · GMod · MTA · Community Management
           </div>
 
           <h1 class="mt-8 max-w-4xl text-5xl font-bold tracking-tight md:text-7xl">
-            Building multiplayer systems with technical clarity and operational focus.
+            I build practical systems for multiplayer communities.
           </h1>
 
           <p class="mt-7 max-w-2xl text-lg leading-8 text-slate-400">
-            I’m Santino Aguirre, a Lua developer focused on server-side systems, admin tooling,
-            persistence, moderation workflows and performance-conscious multiplayer infrastructure
-            for roleplay communities.
+            I’m Santino Aguirre, a Lua developer focused on GMod and MTA systems.
+            I like building tools that are useful in real servers: property systems,
+            admin panels, roleplay mechanics and workflows that make community management easier.
+          </p>
+
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-400">
+            I usually pay attention to optimization and clean structure, especially when a system
+            is going to be used by players or staff every day. I try to keep things simple,
+            stable and easy to maintain.
           </p>
 
           <div class="mt-9 flex flex-col gap-4 sm:flex-row">
-            <a href="#projects" class="inline-flex justify-center rounded-full bg-cyan-300 px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200">
+            <a
+              href="#projects"
+              class="inline-flex justify-center rounded-full bg-cyan-300 px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200"
+            >
               View projects
             </a>
 
-            <a href="#contact" class="inline-flex justify-center rounded-full border border-white/10 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+            <a
+              href="#contact"
+              class="inline-flex justify-center rounded-full border border-white/10 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            >
               Contact me
             </a>
           </div>
@@ -117,7 +146,7 @@
           <div class="mt-12 grid max-w-2xl grid-cols-2 gap-4 sm:grid-cols-4">
             <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-5">
               <p class="text-3xl font-bold">4+</p>
-              <p class="mt-1 text-sm text-slate-500">Years building</p>
+              <p class="mt-1 text-sm text-slate-500">Years learning & building</p>
             </div>
 
             <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-5">
@@ -127,67 +156,40 @@
 
             <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-5">
               <p class="text-3xl font-bold">Lua</p>
-              <p class="mt-1 text-sm text-slate-500">Main stack</p>
+              <p class="mt-1 text-sm text-slate-500">Main language</p>
             </div>
 
             <div class="rounded-3xl border border-white/10 bg-white/[0.03] p-5">
-              <p class="text-3xl font-bold">SQL</p>
-              <p class="mt-1 text-sm text-slate-500">Persistence</p>
+              <p class="text-3xl font-bold">GMod</p>
+              <p class="mt-1 text-sm text-slate-500">Main platform</p>
             </div>
           </div>
         </div>
 
-        <!-- Hero Visual -->
+        <!-- Hero Media -->
         <div class="relative">
           <div class="absolute inset-0 rounded-[2rem] bg-cyan-400/20 blur-[100px]"></div>
 
-          <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-panel/80 p-5 shadow-2xl backdrop-blur">
-            <div class="mb-5 flex items-center justify-between border-b border-white/10 pb-4">
-              <div class="flex items-center gap-2">
-                <span class="h-3 w-3 rounded-full bg-red-400"></span>
-                <span class="h-3 w-3 rounded-full bg-yellow-400"></span>
-                <span class="h-3 w-3 rounded-full bg-green-400"></span>
-              </div>
+          <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-panel/80 p-4 shadow-2xl backdrop-blur">
+            <div
+              class="project-media h-[420px] overflow-hidden rounded-[1.5rem] bg-black/30"
+              data-image="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop"
+              data-video=""
+            ></div>
 
-              <span class="text-xs text-slate-500">server_module.lua</span>
-            </div>
+            <div class="mt-4 rounded-2xl border border-white/10 bg-black/20 p-5">
+              <p class="text-sm font-semibold text-white">Current focus</p>
 
-            <div class="space-y-4 font-mono text-sm">
-              <div class="rounded-2xl border border-white/10 bg-black/30 p-4">
-                <p class="text-slate-500">-- System focus</p>
-                <p><span class="text-cyan-300">local</span> goal = <span class="text-emerald-300">"stable multiplayer workflows"</span></p>
-                <p><span class="text-cyan-300">local</span> stack = { <span class="text-emerald-300">"Lua"</span>, <span class="text-emerald-300">"SQL"</span>, <span class="text-emerald-300">"UI"</span> }</p>
-              </div>
-
-              <div class="rounded-2xl border border-white/10 bg-black/30 p-4">
-                <p><span class="text-violet-300">function</span> OptimizeSystem(payload)</p>
-                <p class="pl-4 text-slate-400">validateState(payload)</p>
-                <p class="pl-4 text-slate-400">reduceNetworkNoise()</p>
-                <p class="pl-4 text-slate-400">syncOnlyWhatChanged()</p>
-                <p><span class="text-violet-300">end</span></p>
-              </div>
-
-              <div class="grid grid-cols-3 gap-3">
-                <div class="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 p-4 text-center">
-                  <p class="text-lg font-bold text-cyan-300">Net</p>
-                  <p class="text-xs text-slate-500">Sync</p>
-                </div>
-
-                <div class="rounded-2xl border border-blue-400/20 bg-blue-400/10 p-4 text-center">
-                  <p class="text-lg font-bold text-blue-300">SQL</p>
-                  <p class="text-xs text-slate-500">Data</p>
-                </div>
-
-                <div class="rounded-2xl border border-violet-400/20 bg-violet-400/10 p-4 text-center">
-                  <p class="text-lg font-bold text-violet-300">ACL</p>
-                  <p class="text-xs text-slate-500">Access</p>
-                </div>
-              </div>
+              <p class="mt-2 text-sm leading-6 text-slate-400">
+                Improving my portfolio, documenting my projects and applying my technical
+                and moderation experience to Roblox marketplace evaluation roles.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- About -->
     <section class="px-6 py-20">
@@ -198,41 +200,41 @@
           </span>
 
           <h2 class="mt-6 text-4xl font-bold tracking-tight">
-            Developer with community-scale context.
+            Developer with real community experience.
           </h2>
         </div>
 
         <div class="rounded-[2rem] border border-white/10 bg-white/[0.03] p-8">
           <p class="text-lg leading-8 text-slate-400">
-            My work sits between development and operations: building Lua systems, maintaining server-side logic,
-            improving admin workflows and understanding how technical decisions affect real communities.
+            My work is mostly connected to multiplayer servers and roleplay communities.
+            I have experience building Lua systems, organizing staff workflows, working with
+            admin tools and understanding what players and moderators need in daily server activity.
           </p>
 
           <p class="mt-5 text-lg leading-8 text-slate-400">
-            I usually pay close attention to optimization, especially around network usage, server state,
-            database persistence and UI responsiveness. Not every system needs overengineering; the goal is to make
-            it stable, readable and practical for the people who actually use it.
+            I care about optimization, but I try to keep it practical. For me, a good system
+            should be stable, readable and easy to use before it tries to be unnecessarily complex.
           </p>
 
           <div class="mt-8 grid gap-4 md:grid-cols-3">
             <div class="rounded-3xl border border-white/10 bg-panel/70 p-5">
-              <p class="font-semibold text-white">Technical systems</p>
+              <p class="font-semibold text-white">Server systems</p>
               <p class="mt-2 text-sm leading-6 text-slate-500">
-                Lua modules, persistence, entity logic, permissions and client-server synchronization.
+                Lua scripts, property systems, roleplay mechanics, admin panels and server logic.
               </p>
             </div>
 
             <div class="rounded-3xl border border-white/10 bg-panel/70 p-5">
-              <p class="font-semibold text-white">Operational thinking</p>
+              <p class="font-semibold text-white">Community work</p>
               <p class="mt-2 text-sm leading-6 text-slate-500">
-                Moderation workflows, staff tooling, reporting, Trello organization and process clarity.
+                Moderation, staff organization, user reports and internal workflows.
               </p>
             </div>
 
             <div class="rounded-3xl border border-white/10 bg-panel/70 p-5">
-              <p class="font-semibold text-white">User experience</p>
+              <p class="font-semibold text-white">Practical focus</p>
               <p class="mt-2 text-sm leading-6 text-slate-500">
-                Interfaces designed to reduce confusion, speed up actions and make systems easier to manage.
+                I try to build systems that solve real problems instead of just looking good on paper.
               </p>
             </div>
           </div>
@@ -240,255 +242,276 @@
       </div>
     </section>
 
+
     <!-- Projects -->
     <section id="projects" class="relative px-6 py-24">
       <div class="mx-auto max-w-7xl">
         <div class="mb-14 max-w-3xl">
           <span class="inline-flex items-center rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">
-            Selected Development Work
+            Projects
           </span>
 
           <h2 class="mt-6 text-4xl font-bold tracking-tight md:text-5xl">
-            Systems built for real multiplayer communities.
+            Projects I’ve worked on
           </h2>
 
           <p class="mt-5 text-lg leading-8 text-slate-400">
-            These projects are presented as technical systems rather than isolated scripts:
-            server logic, persistence, tooling, workflows and maintainability.
+            A selection of systems and tools I’ve built or managed for multiplayer communities.
+            Each project can include an image, a video, or both depending on what I want to showcase.
           </p>
         </div>
 
-        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           <!-- FJSHousing -->
-          <article class="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-white/[0.06]">
-            <div class="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
-              <div class="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-cyan-400/20 blur-3xl"></div>
+          <article class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-white/[0.06]">
+            <div
+              class="project-media relative h-56 overflow-hidden bg-black/30"
+              data-gallery="assets/fjshousing/1.png, assets/fjshousing/2.png, assets/fjshousing/3.jpeg, assets/fjshousing/4.jpg, assets/fjshousing/5.png, assets/fjshousing/6.png,  assets/fjshousing/7.png"
+              data-video="https://www.youtube.com/watch?v=ymBvihjDKig"
+            >
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+
+              <div class="absolute bottom-4 left-4 z-10">
+                <span class="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300 backdrop-blur">
+                  GMod Lua
+                </span>
+              </div>
             </div>
 
-            <div class="relative">
-              <div class="mb-5 flex items-center justify-between">
-                <div class="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-3 py-2 text-sm font-medium text-cyan-300">
-                  GMod Lua
-                </div>
-
-                <span class="text-sm text-slate-500">Production System</span>
-              </div>
-
+            <div class="p-6">
               <h3 class="text-2xl font-semibold tracking-tight">
                 FJSHousing
               </h3>
 
               <p class="mt-3 text-sm leading-6 text-slate-400">
-                Property system for Garry’s Mod focused on ownership logic, SQL persistence,
-                admin tools, apartments, synchronization and configurable server behavior.
+                A property system for Garry’s Mod servers. It includes house creation,
+                ownership, admin tools and support for apartments or interiors.
               </p>
 
-              <ul class="mt-5 space-y-3 text-sm text-slate-400">
-                <li class="flex gap-3">
+              <div class="mt-5 space-y-3 text-sm text-slate-400">
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-cyan-400"></span>
-                  SQL-backed persistent ownership and property data.
-                </li>
-                <li class="flex gap-3">
+                  Built for roleplay servers that need organized property management.
+                </p>
+
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-cyan-400"></span>
-                  Admin panel workflows for property creation and management.
-                </li>
-                <li class="flex gap-3">
+                  Includes admin-side tools to create, edit and manage properties.
+                </p>
+
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-cyan-400"></span>
-                  Network sync designed to avoid unnecessary payloads.
-                </li>
-              </ul>
+                  Focused on stability, clean structure and avoiding unnecessary server load.
+                </p>
+              </div>
 
               <div class="mt-6 flex flex-wrap gap-2">
                 <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Lua</span>
-                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">SQL</span>
-                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Networking</span>
-                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Admin UI</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- FJSDimension -->
-          <article class="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-blue-400/40 hover:bg-white/[0.06]">
-            <div class="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
-              <div class="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl"></div>
-            </div>
-
-            <div class="relative">
-              <div class="mb-5 flex items-center justify-between">
-                <div class="rounded-2xl border border-blue-400/20 bg-blue-400/10 px-3 py-2 text-sm font-medium text-blue-300">
-                  GMod Lua
-                </div>
-
-                <span class="text-sm text-slate-500">Core Module</span>
-              </div>
-
-              <h3 class="text-2xl font-semibold tracking-tight">
-                FJSDimension
-              </h3>
-
-              <p class="mt-3 text-sm leading-6 text-slate-400">
-                Dimension and instance management system designed for separating gameplay spaces,
-                interiors and roleplay contexts while keeping server logic organized.
-              </p>
-
-              <ul class="mt-5 space-y-3 text-sm text-slate-400">
-                <li class="flex gap-3">
-                  <span class="mt-2 h-2 w-2 rounded-full bg-blue-400"></span>
-                  Instance-based structure for isolated interiors and scenarios.
-                </li>
-                <li class="flex gap-3">
-                  <span class="mt-2 h-2 w-2 rounded-full bg-blue-400"></span>
-                  Built to support property, teleport and roleplay systems.
-                </li>
-                <li class="flex gap-3">
-                  <span class="mt-2 h-2 w-2 rounded-full bg-blue-400"></span>
-                  Focused on predictable state handling and maintainable logic.
-                </li>
-              </ul>
-
-              <div class="mt-6 flex flex-wrap gap-2">
-                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Lua</span>
-                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Instances</span>
-                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Server Logic</span>
+                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">GMod</span>
+                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Admin Panel</span>
                 <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Roleplay</span>
               </div>
             </div>
           </article>
 
-          <!-- CoreAdmin -->
-          <article class="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-violet-400/40 hover:bg-white/[0.06]">
-            <div class="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
-              <div class="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-violet-500/20 blur-3xl"></div>
+          <!-- FJSDimension -->
+          <article class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-blue-400/40 hover:bg-white/[0.06]">
+            <div
+              class="project-media relative h-56 overflow-hidden bg-black/30"
+              data-image=""
+              data-video="https://youtu.be/cYcOaz5UgLQ"
+            >
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+
+              <div class="absolute bottom-4 left-4 z-10">
+                <span class="rounded-full border border-blue-400/30 bg-blue-400/10 px-3 py-1 text-xs font-medium text-blue-300 backdrop-blur">
+                  GMod Lua
+                </span>
+              </div>
             </div>
 
-            <div class="relative">
-              <div class="mb-5 flex items-center justify-between">
-                <div class="rounded-2xl border border-violet-400/20 bg-violet-400/10 px-3 py-2 text-sm font-medium text-violet-300">
-                  Admin Tools
-                </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold tracking-tight">
+                FJSDimension
+              </h3>
 
-                <span class="text-sm text-slate-500">Moderation</span>
+              <p class="mt-3 text-sm leading-6 text-slate-400">
+                A system for handling separated spaces inside a server, useful for interiors,
+                apartments, private zones and roleplay scenes.
+              </p>
+
+              <div class="mt-5 space-y-3 text-sm text-slate-400">
+                <p class="flex gap-3">
+                  <span class="mt-2 h-2 w-2 rounded-full bg-blue-400"></span>
+                  Helps separate players or interiors without needing different servers.
+                </p>
+
+                <p class="flex gap-3">
+                  <span class="mt-2 h-2 w-2 rounded-full bg-blue-400"></span>
+                  Designed to work together with property and teleport systems.
+                </p>
+
+                <p class="flex gap-3">
+                  <span class="mt-2 h-2 w-2 rounded-full bg-blue-400"></span>
+                  Built with simple logic so it can be maintained and expanded.
+                </p>
               </div>
 
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Lua</span>
+                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">GMod</span>
+                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Interiors</span>
+                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Server Logic</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CoreAdmin -->
+          <article class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-violet-400/40 hover:bg-white/[0.06]">
+            <div
+              class="project-media relative h-56 overflow-hidden bg-black/30"
+              data-gallery="assets/coreadmin/1.png, assets/coreadmin/2.png, assets/coreadmin/3.png, assets/coreadmin/4.png, assets/coreadmin/5.png"
+              data-video=""
+            >
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+
+              <div class="absolute bottom-4 left-4 z-10">
+                <span class="rounded-full border border-violet-400/30 bg-violet-400/10 px-3 py-1 text-xs font-medium text-violet-300 backdrop-blur">
+                  GMod Lua - Admin
+                </span>
+              </div>
+            </div>
+
+            <div class="p-6">
               <h3 class="text-2xl font-semibold tracking-tight">
                 CoreAdmin
               </h3>
 
               <p class="mt-3 text-sm leading-6 text-slate-400">
-                Administration framework focused on staff workflows, permission control,
-                moderation visibility and faster handling of common server situations.
+                An admin system made to help staff members manage a roleplay server faster
+                and with clearer tools.
               </p>
 
-              <ul class="mt-5 space-y-3 text-sm text-slate-400">
-                <li class="flex gap-3">
+              <div class="mt-5 space-y-3 text-sm text-slate-400">
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-violet-400"></span>
-                  Permission-based administrative actions.
-                </li>
-                <li class="flex gap-3">
+                  Focused on moderation tools and staff workflows.
+                </p>
+
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-violet-400"></span>
-                  Tooling designed around moderation speed and clarity.
-                </li>
-                <li class="flex gap-3">
+                  Designed to make common admin actions easier to find and use.
+                </p>
+
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-violet-400"></span>
-                  Practical workflows for large community staff teams.
-                </li>
-              </ul>
+                  Built from experience managing real community situations.
+                </p>
+              </div>
 
               <div class="mt-6 flex flex-wrap gap-2">
                 <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Lua</span>
-                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Permissions</span>
                 <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Moderation</span>
-                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">UX</span>
+                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Staff Tools</span>
+                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">UI</span>
               </div>
             </div>
           </article>
 
           <!-- MTA Systems -->
-          <article class="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-emerald-400/40 hover:bg-white/[0.06]">
-            <div class="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
-              <div class="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-emerald-500/20 blur-3xl"></div>
+          <article class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-emerald-400/40 hover:bg-white/[0.06]">
+            <div
+              class="project-media relative h-56 overflow-hidden bg-black/30"
+              data-gallery="assets/mta/1.png"
+              data-video=""
+            >
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+
+              <div class="absolute bottom-4 left-4 z-10">
+                <span class="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-medium text-emerald-300 backdrop-blur">
+                  MTA:SA Lua
+                </span>
+              </div>
             </div>
 
-            <div class="relative">
-              <div class="mb-5 flex items-center justify-between">
-                <div class="rounded-2xl border border-emerald-400/20 bg-emerald-400/10 px-3 py-2 text-sm font-medium text-emerald-300">
-                  MTA:SA Lua
-                </div>
-
-                <span class="text-sm text-slate-500">Server Scripts</span>
-              </div>
-
+            <div class="p-6">
               <h3 class="text-2xl font-semibold tracking-tight">
                 MTA Roleplay Systems
               </h3>
 
               <p class="mt-3 text-sm leading-6 text-slate-400">
-                Lua-based systems for MTA:SA environments, focused on roleplay mechanics,
-                server-side behavior, configuration and gameplay support tools.
+                Scripts and systems for MTA:SA servers, focused on roleplay mechanics,
+                server behavior and configuration.
               </p>
 
-              <ul class="mt-5 space-y-3 text-sm text-slate-400">
-                <li class="flex gap-3">
+              <div class="mt-5 space-y-3 text-sm text-slate-400">
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-emerald-400"></span>
-                  Server/client scripting for multiplayer mechanics.
-                </li>
-                <li class="flex gap-3">
+                  Experience working with Lua resources and server-side logic.
+                </p>
+
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-emerald-400"></span>
-                  Experience with XML configuration and resource structure.
-                </li>
-                <li class="flex gap-3">
+                  Knowledge of XML configuration and resource structure.
+                </p>
+
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-emerald-400"></span>
-                  Practical understanding of roleplay server requirements.
-                </li>
-              </ul>
+                  Focused on practical features for roleplay servers.
+                </p>
+              </div>
 
               <div class="mt-6 flex flex-wrap gap-2">
                 <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Lua</span>
-                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">XML</span>
                 <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">MTA</span>
-                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Gameplay</span>
+                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">XML</span>
+                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Roleplay</span>
               </div>
             </div>
           </article>
 
-          <!-- Operations -->
-          <article class="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-orange-400/40 hover:bg-white/[0.06]">
-            <div class="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
-              <div class="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-orange-500/20 blur-3xl"></div>
+          <!-- Argentina Roleplay -->
+          <article class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-orange-400/40 hover:bg-white/[0.06]">
+            <div
+              class="project-media relative h-56 overflow-hidden bg-black/30"
+              data-gallery="assets/argrp/1.png, assets/argrp/2.png"
+              data-video=""
+            >
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+
+              <div class="absolute bottom-4 left-4 z-10">
+                <span class="rounded-full border border-orange-400/30 bg-orange-400/10 px-3 py-1 text-xs font-medium text-orange-300 backdrop-blur">
+                  Community Management
+                </span>
+              </div>
             </div>
 
-            <div class="relative">
-              <div class="mb-5 flex items-center justify-between">
-                <div class="rounded-2xl border border-orange-400/20 bg-orange-400/10 px-3 py-2 text-sm font-medium text-orange-300">
-                  Operations
-                </div>
-
-                <span class="text-sm text-slate-500">Community</span>
-              </div>
-
+            <div class="p-6">
               <h3 class="text-2xl font-semibold tracking-tight">
                 Argentina Roleplay
               </h3>
 
               <p class="mt-3 text-sm leading-6 text-slate-400">
-                Lead Community Manager experience in a large Spanish-speaking roleplay community,
-                connecting technical systems with moderation, organization and user-facing processes.
+                Community management experience in a large roleplay community with over
+                31,000 users.
               </p>
 
-              <ul class="mt-5 space-y-3 text-sm text-slate-400">
-                <li class="flex gap-3">
+              <div class="mt-5 space-y-3 text-sm text-slate-400">
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-orange-400"></span>
-                  Experience supporting a community of over 31,000 users.
-                </li>
-                <li class="flex gap-3">
+                  Staff organization, moderation and user support.
+                </p>
+
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-orange-400"></span>
-                  Staff coordination, moderation structure and process improvement.
-                </li>
-                <li class="flex gap-3">
+                  Experience turning repeated community problems into better processes.
+                </p>
+
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-orange-400"></span>
-                  Technical perspective applied to community operations.
-                </li>
-              </ul>
+                  Useful background for marketplace and user-generated content review.
+                </p>
+              </div>
 
               <div class="mt-6 flex flex-wrap gap-2">
                 <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Moderation</span>
@@ -499,72 +522,76 @@
             </div>
           </article>
 
-          <!-- Tools -->
-          <article class="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-slate-400/40 hover:bg-white/[0.06]">
-            <div class="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
-              <div class="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-slate-500/20 blur-3xl"></div>
+          <!-- Workflow -->
+          <article class="group overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-slate-400/40 hover:bg-white/[0.06]">
+            <div
+              class="project-media relative h-56 overflow-hidden bg-black/30"
+              data-image="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+              data-video=""
+            >
+              <div class="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
+
+              <div class="absolute bottom-4 left-4 z-10">
+                <span class="rounded-full border border-slate-400/30 bg-slate-400/10 px-3 py-1 text-xs font-medium text-slate-300 backdrop-blur">
+                  Workflow
+                </span>
+              </div>
             </div>
 
-            <div class="relative">
-              <div class="mb-5 flex items-center justify-between">
-                <div class="rounded-2xl border border-slate-400/20 bg-slate-400/10 px-3 py-2 text-sm font-medium text-slate-300">
-                  Tooling
-                </div>
-
-                <span class="text-sm text-slate-500">Workflow</span>
-              </div>
-
+            <div class="p-6">
               <h3 class="text-2xl font-semibold tracking-tight">
-                Workflow & Reporting
+                Workflow & Reports
               </h3>
 
               <p class="mt-3 text-sm leading-6 text-slate-400">
-                Operational tooling and reporting experience using Trello, Excel and server panels,
-                with a focus on keeping teams organized and decisions traceable.
+                Organization and reporting work using Trello, Excel and server panels
+                to keep staff teams coordinated.
               </p>
 
-              <ul class="mt-5 space-y-3 text-sm text-slate-400">
-                <li class="flex gap-3">
+              <div class="mt-5 space-y-3 text-sm text-slate-400">
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-slate-400"></span>
-                  Project boards, task tracking and moderation pipelines.
-                </li>
-                <li class="flex gap-3">
+                  Task boards and internal process organization.
+                </p>
+
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-slate-400"></span>
-                  Excel reports for activity, moderation and operational review.
-                </li>
-                <li class="flex gap-3">
+                  Reports for moderation, staff activity and community management.
+                </p>
+
+                <p class="flex gap-3">
                   <span class="mt-2 h-2 w-2 rounded-full bg-slate-400"></span>
-                  Familiarity with WISP and game server management panels.
-                </li>
-              </ul>
+                  Experience with server panels and daily operational tools.
+                </p>
+              </div>
 
               <div class="mt-6 flex flex-wrap gap-2">
                 <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Trello</span>
                 <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Excel</span>
                 <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">WISP</span>
-                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Panels</span>
+                <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Operations</span>
               </div>
             </div>
           </article>
         </div>
-      </div>
     </section>
+
 
     <!-- Skills -->
     <section id="skills" class="px-6 py-24">
       <div class="mx-auto max-w-7xl">
         <div class="mb-14 max-w-3xl">
           <span class="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">
-            Technical Stack
+            Skills
           </span>
 
           <h2 class="mt-6 text-4xl font-bold tracking-tight md:text-5xl">
-            Skills focused on practical server development.
+            Tools and areas I work with
           </h2>
 
           <p class="mt-5 text-lg leading-8 text-slate-400">
-            My strongest area is Lua development for multiplayer environments, supported by database logic,
-            admin interfaces, server management and workflow tooling.
+            My strongest area is Lua development for multiplayer environments,
+            supported by moderation experience, server tools and workflow organization.
           </p>
         </div>
 
@@ -576,23 +603,20 @@
               <span class="rounded-full bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">Lua</span>
               <span class="rounded-full bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">GMod Lua</span>
               <span class="rounded-full bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">MTA:SA Lua</span>
-              <span class="rounded-full bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">Python</span>
               <span class="rounded-full bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">SQL</span>
               <span class="rounded-full bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">XML</span>
               <span class="rounded-full bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">HTML</span>
-              <span class="rounded-full bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">Tailwind CSS</span>
             </div>
           </div>
 
           <div class="rounded-[2rem] border border-white/10 bg-white/[0.03] p-7">
-            <h3 class="text-xl font-semibold">Systems</h3>
+            <h3 class="text-xl font-semibold">Server work</h3>
 
             <div class="mt-6 flex flex-wrap gap-3">
               <span class="rounded-full bg-blue-400/10 px-4 py-2 text-sm text-blue-300">Server Logic</span>
-              <span class="rounded-full bg-blue-400/10 px-4 py-2 text-sm text-blue-300">Persistence</span>
               <span class="rounded-full bg-blue-400/10 px-4 py-2 text-sm text-blue-300">Admin Tools</span>
-              <span class="rounded-full bg-blue-400/10 px-4 py-2 text-sm text-blue-300">Permissions</span>
-              <span class="rounded-full bg-blue-400/10 px-4 py-2 text-sm text-blue-300">Client Sync</span>
+              <span class="rounded-full bg-blue-400/10 px-4 py-2 text-sm text-blue-300">Roleplay Systems</span>
+              <span class="rounded-full bg-blue-400/10 px-4 py-2 text-sm text-blue-300">Property Systems</span>
               <span class="rounded-full bg-blue-400/10 px-4 py-2 text-sm text-blue-300">Optimization</span>
               <span class="rounded-full bg-blue-400/10 px-4 py-2 text-sm text-blue-300">Debugging</span>
             </div>
@@ -606,13 +630,14 @@
               <span class="rounded-full bg-violet-400/10 px-4 py-2 text-sm text-violet-300">Excel</span>
               <span class="rounded-full bg-violet-400/10 px-4 py-2 text-sm text-violet-300">WISP</span>
               <span class="rounded-full bg-violet-400/10 px-4 py-2 text-sm text-violet-300">Moderation</span>
-              <span class="rounded-full bg-violet-400/10 px-4 py-2 text-sm text-violet-300">Reporting</span>
+              <span class="rounded-full bg-violet-400/10 px-4 py-2 text-sm text-violet-300">Reports</span>
               <span class="rounded-full bg-violet-400/10 px-4 py-2 text-sm text-violet-300">Community Management</span>
             </div>
           </div>
         </div>
       </div>
     </section>
+
 
     <!-- Roblox Relevance -->
     <section class="px-6 py-24">
@@ -621,16 +646,18 @@
           <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <span class="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">
-                Marketplace Evaluation Fit
+                Why this matters for Roblox
               </span>
 
               <h2 class="mt-6 text-4xl font-bold tracking-tight">
-                Technical judgment with moderation context.
+                I understand both code and community behavior.
               </h2>
 
               <p class="mt-5 text-lg leading-8 text-slate-400">
-                My background combines code, user behavior, moderation processes and community-scale systems.
-                That mix is relevant for evaluating marketplace content with both technical and operational awareness.
+                My experience is not only about writing scripts. I’ve also worked with moderation,
+                staff teams, player reports and community problems. That helps me review content
+                with a more practical point of view: how something works, how users interact with it
+                and what problems it could create.
               </p>
             </div>
 
@@ -638,28 +665,28 @@
               <div class="rounded-3xl border border-white/10 bg-black/20 p-6">
                 <p class="text-lg font-semibold">Quality review</p>
                 <p class="mt-3 text-sm leading-6 text-slate-400">
-                  Experience identifying whether systems are clear, usable, maintainable and appropriate for real users.
+                  I’m used to looking at whether a system is clear, usable and practical for real users.
                 </p>
               </div>
 
               <div class="rounded-3xl border border-white/10 bg-black/20 p-6">
-                <p class="text-lg font-semibold">User safety mindset</p>
+                <p class="text-lg font-semibold">Moderation mindset</p>
                 <p class="mt-3 text-sm leading-6 text-slate-400">
-                  Moderation background helps evaluate risks, abuse patterns and community impact.
+                  Community management experience helps me think about abuse, confusion and user impact.
                 </p>
               </div>
 
               <div class="rounded-3xl border border-white/10 bg-black/20 p-6">
-                <p class="text-lg font-semibold">Technical literacy</p>
+                <p class="text-lg font-semibold">Technical context</p>
                 <p class="mt-3 text-sm leading-6 text-slate-400">
-                  Lua, server systems and tooling experience provide context when reviewing game-related assets or logic.
+                  Lua and multiplayer server experience give me a better understanding of game-related systems.
                 </p>
               </div>
 
               <div class="rounded-3xl border border-white/10 bg-black/20 p-6">
                 <p class="text-lg font-semibold">Process discipline</p>
                 <p class="mt-3 text-sm leading-6 text-slate-400">
-                  Comfortable working with reports, queues, structured review flows and consistent decision-making.
+                  I’m comfortable working with reports, queues, review flows and consistent decision-making.
                 </p>
               </div>
             </div>
@@ -667,6 +694,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- Experience -->
     <section id="experience" class="px-6 py-24">
@@ -696,8 +724,7 @@
 
             <p class="mt-5 max-w-4xl leading-7 text-slate-400">
               Led community-facing operations, moderation coordination and internal workflows for a large roleplay community.
-              Worked close to technical and staff needs, helping translate recurring problems into clearer systems,
-              processes and tools.
+              Worked close to technical and staff needs, helping turn repeated problems into clearer systems and processes.
             </p>
           </div>
 
@@ -715,7 +742,7 @@
 
             <p class="mt-5 max-w-4xl leading-7 text-slate-400">
               Built and maintained Lua systems involving property management, dimensions, admin tooling,
-              server-side validation, SQL persistence and interface workflows. Main focus: systems that are useful,
+              server-side behavior, configuration and interface workflows. Main focus: systems that are useful,
               maintainable and reasonably optimized for live server environments.
             </p>
           </div>
@@ -742,6 +769,7 @@
       </div>
     </section>
 
+
     <!-- Contact -->
     <section id="contact" class="px-6 py-24">
       <div class="mx-auto max-w-7xl">
@@ -751,7 +779,7 @@
           </span>
 
           <h2 class="mt-6 text-4xl font-bold tracking-tight md:text-5xl">
-            Let’s build systems that are actually useful.
+            Let’s build something useful.
           </h2>
 
           <p class="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-400">
@@ -760,32 +788,382 @@
           </p>
 
           <div class="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
-            <a href="mailto:aguirresantino85@gmail.com" class="inline-flex justify-center rounded-full bg-cyan-300 px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200">
+            <a
+              href="mailto:aguirresantino85@gmail.com"
+              class="inline-flex justify-center rounded-full bg-cyan-300 px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200"
+            >
               Email me
             </a>
 
-            <a href="https://github.com/FJS-01" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center rounded-full border border-white/10 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+            <a
+              href="https://github.com/FJS-01"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex justify-center rounded-full border border-white/10 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            >
               GitHub
             </a>
 
-            <a href="https://www.linkedin.com/in/santino-aguirre-6345a2198/?locale=es-ES" target="_blank" rel="noopener noreferrer" class="inline-flex justify-center rounded-full border border-white/10 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+            <a
+              href="https://www.linkedin.com/in/santino-aguirre-6345a2198/?locale=es-ES"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex justify-center rounded-full border border-white/10 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            >
               LinkedIn
             </a>
           </div>
 
-          <p class="mt-6 text-sm text-slate-600">
-            Replace the email, GitHub and LinkedIn links with your real profiles.
-          </p>
+          <div class="mt-8 flex flex-col items-center justify-center gap-3 text-sm text-slate-500 sm:flex-row">
+            <a href="mailto:aguirresantino85@gmail.com" class="transition hover:text-cyan-300">
+              aguirresantino85@gmail.com
+            </a>
+
+            <span class="hidden text-slate-700 sm:inline">·</span>
+
+            <a
+              href="https://github.com/FJS-01"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="transition hover:text-cyan-300"
+            >
+              github.com/FJS-01
+            </a>
+
+            <span class="hidden text-slate-700 sm:inline">·</span>
+
+            <a
+              href="https://www.linkedin.com/in/santino-aguirre-6345a2198/?locale=es-ES"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="transition hover:text-cyan-300"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
+
+  <!-- Footer -->
   <footer class="border-t border-white/10 px-6 py-8">
     <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-slate-500 md:flex-row">
       <p>© 2026 Santino Aguirre. All rights reserved.</p>
-      <p>Built with HTML, Tailwind CSS and a suspicious amount of caffeine.</p>
+      <p>Built with HTML and Tailwind CSS.</p>
     </div>
   </footer>
+
+
+  <!-- Media Loader -->
+  <script>
+    function getYouTubeId(url) {
+      if (!url) return "";
+
+      const normalMatch = url.match(/[?&]v=([^&]+)/);
+      const shortMatch = url.match(/youtu\.be\/([^?&]+)/);
+      const embedMatch = url.match(/youtube\.com\/embed\/([^?&]+)/);
+
+      if (normalMatch && normalMatch[1]) return normalMatch[1];
+      if (shortMatch && shortMatch[1]) return shortMatch[1];
+      if (embedMatch && embedMatch[1]) return embedMatch[1];
+
+      return "";
+    }
+
+    function isYouTubeUrl(url) {
+      return Boolean(getYouTubeId(url));
+    }
+
+    function getYouTubeWatchUrl(url) {
+      const id = getYouTubeId(url);
+      return id ? "https://www.youtube.com/watch?v=" + id : url;
+    }
+
+    function getYouTubeThumbnail(url) {
+      const id = getYouTubeId(url);
+      return id ? "https://img.youtube.com/vi/" + id + "/hqdefault.jpg" : "";
+    }
+
+    function isDirectVideo(url) {
+      return /\.(mp4|webm|ogg)(\?.*)?$/i.test(url);
+    }
+
+    function renderYouTubePreview(block, videoUrl, overlay) {
+      const thumbnail = getYouTubeThumbnail(videoUrl);
+      const watchUrl = getYouTubeWatchUrl(videoUrl);
+
+      block.innerHTML = `
+        <a
+          href="${watchUrl}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="absolute inset-0 block"
+          aria-label="Open video on YouTube"
+        >
+          <img
+            src="${thumbnail}"
+            alt="YouTube video preview"
+            class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            loading="lazy"
+          />
+
+          <div class="absolute inset-0 bg-black/25"></div>
+
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="rounded-full border border-white/20 bg-black/60 px-5 py-3 text-sm font-semibold text-white backdrop-blur">
+              ▶ Watch video
+            </div>
+          </div>
+        </a>
+        ${overlay}
+      `;
+    }
+
+    function loadProjectMedia() {
+      const mediaBlocks = document.querySelectorAll(".project-media");
+
+      mediaBlocks.forEach((block) => {
+        const imageUrl = block.dataset.image || "";
+        const videoUrl = block.dataset.video || "";
+        const overlay = block.innerHTML;
+
+        if (videoUrl && isYouTubeUrl(videoUrl)) {
+          renderYouTubePreview(block, videoUrl, overlay);
+          return;
+        }
+
+        if (videoUrl && isDirectVideo(videoUrl)) {
+          block.innerHTML = `
+            <video
+              src="${videoUrl}"
+              class="absolute inset-0 h-full w-full object-cover"
+              controls
+              preload="metadata"
+            ></video>
+            ${overlay}
+          `;
+          return;
+        }
+
+        if (imageUrl) {
+          block.innerHTML = `
+            <img
+              src="${imageUrl}"
+              alt="Project preview"
+              class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+              loading="lazy"
+            />
+            ${overlay}
+          `;
+          return;
+        }
+
+        block.innerHTML = `
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30 p-6 text-center text-sm text-slate-500">
+            Add an image or video URL in this project card.
+          </div>
+          ${overlay}
+        `;
+      });
+    }
+
+    loadProjectMedia();
+
+    // Project modal & gallery
+    (function () {
+      let currentGallery = [];
+      let currentIndex = 0;
+
+      function createModal() {
+        if (document.getElementById("project-modal")) return;
+
+        const modal = document.createElement("div");
+        modal.id = "project-modal";
+        modal.className = "hidden fixed inset-0 z-50 items-center justify-center p-6";
+        modal.innerHTML = `
+          <div class="absolute inset-0 bg-black/70" data-action="close"></div>
+
+          <div class="relative w-full max-w-4xl overflow-hidden rounded-[2rem] border border-white/10 bg-panel/95 p-4 shadow-2xl">
+            <button
+              data-action="close"
+              class="absolute right-4 top-4 z-10 rounded-full border border-white/10 bg-black/50 px-4 py-2 text-sm text-slate-200 backdrop-blur transition hover:bg-white/10"
+            >
+              Close
+            </button>
+
+            <div id="modal-media" class="flex h-[60vh] w-full items-center justify-center overflow-hidden rounded-[1.5rem] bg-black"></div>
+
+            <div class="mt-4 flex items-center justify-between gap-3">
+              <button id="modal-prev" class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 transition hover:bg-white/10">
+                Previous
+              </button>
+
+              <div id="modal-counter" class="text-sm text-slate-400"></div>
+
+              <button id="modal-next" class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 transition hover:bg-white/10">
+                Next
+              </button>
+            </div>
+          </div>
+        `;
+
+        document.body.appendChild(modal);
+
+        modal.querySelectorAll('[data-action="close"]').forEach((el) => {
+          el.addEventListener("click", closeModal);
+        });
+
+        document.getElementById("modal-prev").addEventListener("click", () => showIndex(currentIndex - 1));
+        document.getElementById("modal-next").addEventListener("click", () => showIndex(currentIndex + 1));
+
+        document.addEventListener("keydown", (e) => {
+          if (modal.classList.contains("hidden")) return;
+          if (e.key === "Escape") closeModal();
+          if (e.key === "ArrowLeft") showIndex(currentIndex - 1);
+          if (e.key === "ArrowRight") showIndex(currentIndex + 1);
+        });
+      }
+
+      function renderItem(item) {
+        const container = document.getElementById("modal-media");
+        container.innerHTML = "";
+
+        if (isYouTubeUrl(item)) {
+          const watchUrl = getYouTubeWatchUrl(item);
+          const thumbnail = getYouTubeThumbnail(item);
+
+          container.innerHTML = `
+            <div class="relative h-full w-full">
+              <img
+                src="${thumbnail}"
+                alt="YouTube video preview"
+                class="h-full w-full object-cover"
+                loading="lazy"
+              />
+
+              <div class="absolute inset-0 bg-black/45"></div>
+
+              <div class="absolute inset-0 flex flex-col items-center justify-center gap-4 p-6 text-center">
+                <p class="max-w-xl text-sm leading-6 text-slate-300">
+                  YouTube sometimes blocks embedded playback on external pages. Open the video directly to avoid player errors.
+                </p>
+
+                <a
+                  href="${watchUrl}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center rounded-full bg-cyan-300 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200"
+                >
+                  Watch on YouTube
+                </a>
+              </div>
+            </div>
+          `;
+          return;
+        }
+
+        if (isDirectVideo(item)) {
+          const video = document.createElement("video");
+          video.src = item;
+          video.controls = true;
+          video.preload = "metadata";
+          video.className = "h-full w-full object-cover";
+          container.appendChild(video);
+          return;
+        }
+
+        const img = document.createElement("img");
+        img.src = item;
+        img.alt = "Preview";
+        img.loading = "lazy";
+        img.className = "h-full w-full object-cover";
+        container.appendChild(img);
+      }
+
+      function showIndex(idx) {
+        if (!currentGallery.length) return;
+        if (idx < 0) idx = currentGallery.length - 1;
+        if (idx >= currentGallery.length) idx = 0;
+
+        currentIndex = idx;
+        renderItem(currentGallery[currentIndex]);
+        document.getElementById("modal-counter").textContent = (currentIndex + 1) + " / " + currentGallery.length;
+      }
+
+      function openModal(gallery, startIndex = 0) {
+        currentGallery = gallery.slice();
+        currentIndex = startIndex || 0;
+        createModal();
+
+        const modal = document.getElementById("project-modal");
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        showIndex(currentIndex);
+      }
+
+      function closeModal() {
+        const modal = document.getElementById("project-modal");
+        if (!modal) return;
+
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      }
+
+      function gatherGalleryFromArticle(article) {
+        const media = article.querySelector(".project-media");
+        if (!media) return [];
+
+        const gallery = [];
+
+        if (media.dataset.gallery) {
+          media.dataset.gallery.split(/[,|]\s*/).forEach((item) => {
+            const cleanItem = item.trim();
+
+            if (!cleanItem) return;
+            if (cleanItem.includes("example.com")) return;
+            if (cleanItem.includes("VIDEO_ID")) return;
+
+            gallery.push(cleanItem);
+          });
+        }
+
+        if (media.dataset.video) gallery.push(media.dataset.video);
+        if (media.dataset.image) gallery.push(media.dataset.image);
+
+        return [...new Set(gallery)];
+      }
+
+      function setupProjectButtons() {
+        document.querySelectorAll("article").forEach((article) => {
+          const info = article.querySelector(".p-6");
+          if (!info) return;
+          if (info.querySelector(".open-project-btn")) return;
+
+          const gallery = gatherGalleryFromArticle(article);
+
+          const btn = document.createElement("a");
+          btn.href = "#";
+          btn.className = "open-project-btn inline-flex mt-4 items-center justify-center rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white transition hover:bg-white/10";
+          btn.textContent = gallery.length ? "View media" : "No media yet";
+
+          if (!gallery.length) {
+            btn.classList.add("pointer-events-none", "opacity-50");
+          }
+
+          btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            const latestGallery = gatherGalleryFromArticle(article);
+            if (latestGallery.length) openModal(latestGallery, 0);
+          });
+
+          info.appendChild(btn);
+        });
+      }
+
+      setupProjectButtons();
+    })();
+  </script>
 </body>
 </html>
