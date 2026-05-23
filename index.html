@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santino Aguirre | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans">
+
+    <header class="h-screen flex flex-col justify-center items-center text-center p-6">
+        <img src="https://media.discordapp.net/attachments/979550208679608340/1507603157847376054/frente_santino_aguirre.png" class="w-40 h-40 rounded-full border-4 border-blue-500 mb-6">
+        <h1 class="text-5xl font-bold mb-2">Santino Aguirre</h1>
+        <p class="text-blue-400 text-xl">Content Evaluator & Community Lead</p>
+        <div class="mt-8 flex gap-4">
+            <a href="mailto:aguirresantino85@gmail.com" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full">Contact Me</a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-6 space-y-12">
+        <section>
+            <h2 class="text-3xl font-bold border-l-4 border-blue-500 pl-4 mb-6">Moderation & Ops</h2>
+            <p class="text-slate-400 mb-4">4 years managing 31,000+ users. Expert in content classification, guideline enforcement, and data reporting.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-slate-800 p-4 rounded-lg"><strong>Tools:</strong> Trello, Excel, Discord Admin</div>
+                <div class="bg-slate-800 p-4 rounded-lg"><strong>Focus:</strong> Content safety & Community health</div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-3xl font-bold border-l-4 border-blue-500 pl-4 mb-6">Technical Projects</h2>
+            <div class="aspect-video bg-slate-800 flex items-center justify-center rounded-lg mb-4">
+                <p>Embed your YouTube link here or upload your project video</p>
+            </div>
+            <pre class="bg-black p-4 rounded text-blue-300 text-sm overflow-x-auto">
+-- Snippet of CoreAdmin System (Lua)
+function Admin:Kick(player, reason)
+    player:Kick("Kicked by System: " .. reason)
+end
+            </pre>
+        </section>
+    </main>
+
+    <footer class="text-center p-10 text-slate-600">© 2026 Santino Aguirre</footer>
+</body>
+</html>
