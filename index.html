@@ -1,70 +1,170 @@
-<!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santino Aguirre | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-slate-900 text-slate-100 font-sans">
+<section id="projects" class="relative py-24 bg-[#05070d] text-white overflow-hidden">
+  <!-- Background glow -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-20 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-500/20 blur-[120px]"></div>
+    <div class="absolute bottom-10 right-10 h-64 w-64 rounded-full bg-blue-600/20 blur-[120px]"></div>
+  </div>
 
-    <nav class="fixed w-full bg-slate-900/90 backdrop-blur p-4 flex justify-center gap-6 border-b border-slate-800 z-50">
-        <a href="#proyectos" class="hover:text-blue-400">Proyectos</a>
-        <a href="#moderacion" class="hover:text-blue-400">Moderación</a>
-    </nav>
+  <div class="relative mx-auto max-w-7xl px-6">
+    <div class="mb-14 max-w-3xl">
+      <span class="inline-flex items-center rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-1 text-sm text-cyan-300">
+        Selected Development Work
+      </span>
 
-    <header class="h-screen flex flex-col justify-center items-center text-center p-6">
-        <h1 class="text-5xl font-bold mb-2">Santino Aguirre</h1>
-        <p class="text-blue-400 text-xl">Technical Operations & Community Lead</p>
-        <a href="#proyectos" class="mt-8 bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-bold">Ver Proyectos</a>
-    </header>
+      <h2 class="mt-6 text-4xl font-bold tracking-tight md:text-5xl">
+        Systems built for real communities, not toy examples.
+      </h2>
 
-    <main class="max-w-5xl mx-auto p-6 space-y-24">
-        
-        <section id="proyectos">
-            <h2 class="text-4xl font-bold mb-12 border-l-4 border-blue-500 pl-4">Proyectos Técnicos</h2>
-            
-            <div class="space-y-16">
-                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700">
-                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Garry's Mod (CoreAdmin / Housing)</h3>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="space-y-4">
-                            <img src="images/gmod_project.jpg" class="rounded-lg shadow-xl" alt="Sistema GMod">
-                            <p class="text-slate-400">Desarrollo de sistemas optimizados en LUA para servidores de alta concurrencia.</p>
-                        </div>
-                        <div class="aspect-video bg-black rounded-lg flex items-center justify-center">
-                            <p class="text-slate-600">[Embed Video GMod]</p>
-                        </div>
-                    </div>
-                </div>
+      <p class="mt-5 text-lg text-slate-400">
+        Custom Lua systems for GMod and MTA focused on performance, moderation workflows,
+        persistence, admin tooling and scalable roleplay infrastructure.
+      </p>
+    </div>
 
-                <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700">
-                    <h3 class="text-2xl font-bold mb-4 text-blue-400">MTA | Argentina Roleplay</h3>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="space-y-4">
-                            <img src="images/mta_project.jpg" class="rounded-lg shadow-xl" alt="Dashboard MTA">
-                            <p class="text-slate-400">Gestión técnica y moderación masiva de +31.000 usuarios.</p>
-                        </div>
-                        <div class="aspect-video bg-black rounded-lg flex items-center justify-center">
-                            <p class="text-slate-600">[Embed Video MTA]</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <!-- Project Card -->
+      <article class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-white/[0.06]">
+        <div class="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
+          <div class="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-cyan-400/20 blur-3xl"></div>
+        </div>
+
+        <div class="relative">
+          <div class="mb-5 flex items-center justify-between">
+            <div class="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-3 py-2 text-sm font-medium text-cyan-300">
+              GMod Lua
             </div>
-        </section>
 
-        <section id="moderacion">
-            <h2 class="text-4xl font-bold mb-8 border-l-4 border-green-500 pl-4">Experiencia en Moderación</h2>
-            <div class="bg-slate-800 p-8 rounded-2xl text-center">
-                <p class="text-xl mb-6">4 años de experiencia en gestión de comunidades.</p>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="p-4 bg-slate-900 rounded"><strong>31k</strong> Usuarios</div>
-                    <div class="p-4 bg-slate-900 rounded"><strong>+300</strong> Activos diarios</div>
-                    <div class="p-4 bg-slate-900 rounded"><strong>Trello</strong> Organización</div>
-                    <div class="p-4 bg-slate-900 rounded"><strong>Excel</strong> Reportes</div>
-                </div>
+            <span class="text-sm text-slate-500">Production System</span>
+          </div>
+
+          <h3 class="text-2xl font-semibold tracking-tight">
+            FJSHousing
+          </h3>
+
+          <p class="mt-3 text-sm leading-6 text-slate-400">
+            Advanced property system for Garry’s Mod with persistent SQL data,
+            admin tooling, ownership logic, apartment support and optimized network sync.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Lua</span>
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">SQL</span>
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Networking</span>
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Admin Panel</span>
+          </div>
+
+          <div class="mt-7 grid grid-cols-3 gap-3 border-t border-white/10 pt-5">
+            <div>
+              <p class="text-xl font-bold text-white">31k+</p>
+              <p class="text-xs text-slate-500">Community</p>
             </div>
-        </section>
-    </main>
-</body>
-</html>
+            <div>
+              <p class="text-xl font-bold text-white">SQL</p>
+              <p class="text-xs text-slate-500">Persistence</p>
+            </div>
+            <div>
+              <p class="text-xl font-bold text-white">Admin</p>
+              <p class="text-xs text-slate-500">Tools</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Card -->
+      <article class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-blue-400/40 hover:bg-white/[0.06]">
+        <div class="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
+          <div class="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl"></div>
+        </div>
+
+        <div class="relative">
+          <div class="mb-5 flex items-center justify-between">
+            <div class="rounded-2xl border border-blue-400/20 bg-blue-400/10 px-3 py-2 text-sm font-medium text-blue-300">
+              GMod Lua
+            </div>
+
+            <span class="text-sm text-slate-500">Core Module</span>
+          </div>
+
+          <h3 class="text-2xl font-semibold tracking-tight">
+            FJSDimension
+          </h3>
+
+          <p class="mt-3 text-sm leading-6 text-slate-400">
+            Dimension and instance management system designed for roleplay servers,
+            enabling separated interiors, property isolation and scalable gameplay spaces.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Lua</span>
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Instances</span>
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Roleplay Logic</span>
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Server Systems</span>
+          </div>
+
+          <div class="mt-7 grid grid-cols-3 gap-3 border-t border-white/10 pt-5">
+            <div>
+              <p class="text-xl font-bold text-white">Multi</p>
+              <p class="text-xs text-slate-500">Instances</p>
+            </div>
+            <div>
+              <p class="text-xl font-bold text-white">Low</p>
+              <p class="text-xs text-slate-500">Overhead</p>
+            </div>
+            <div>
+              <p class="text-xl font-bold text-white">RP</p>
+              <p class="text-xs text-slate-500">Ready</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Card -->
+      <article class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-6 shadow-2xl transition duration-300 hover:-translate-y-1 hover:border-violet-400/40 hover:bg-white/[0.06]">
+        <div class="absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">
+          <div class="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-violet-500/20 blur-3xl"></div>
+        </div>
+
+        <div class="relative">
+          <div class="mb-5 flex items-center justify-between">
+            <div class="rounded-2xl border border-violet-400/20 bg-violet-400/10 px-3 py-2 text-sm font-medium text-violet-300">
+              Admin Tools
+            </div>
+
+            <span class="text-sm text-slate-500">Moderation</span>
+          </div>
+
+          <h3 class="text-2xl font-semibold tracking-tight">
+            CoreAdmin
+          </h3>
+
+          <p class="mt-3 text-sm leading-6 text-slate-400">
+            Administration framework focused on moderation speed, staff workflows,
+            permission control and operational visibility for large roleplay communities.
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-2">
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Lua</span>
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Permissions</span>
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">Moderation</span>
+            <span class="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">UX</span>
+          </div>
+
+          <div class="mt-7 grid grid-cols-3 gap-3 border-t border-white/10 pt-5">
+            <div>
+              <p class="text-xl font-bold text-white">Staff</p>
+              <p class="text-xs text-slate-500">Workflow</p>
+            </div>
+            <div>
+              <p class="text-xl font-bold text-white">Logs</p>
+              <p class="text-xs text-slate-500">Tracking</p>
+            </div>
+            <div>
+              <p class="text-xl font-bold text-white">ACL</p>
+              <p class="text-xs text-slate-500">Access</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
